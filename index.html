@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dipesh Khatri Chhetri | Bird Researcher & Conservationist</title>
+
+    <meta name="description" content="Dipesh Khatri Chhetri is a forestry student and bird researcher in Nepal interested in raptor ecology, vulture conservation, avian ecology, habitat use and biodiversity conservation.">
+
+    <meta name="author" content="Dipesh Khatri Chhetri">
+
+    <meta name="keywords" content="Dipesh Khatri Chhetri, bird researcher Nepal, raptor researcher Nepal, vulture research Nepal, avian ecology, bird conservation, forestry student">
+
+    <meta name="robots" content="index, follow">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.7;
+            color: #1f2933;
+            background: #f8faf9;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        /* Navigation */
+
+        nav {
+            background: #ffffff;
+            border-bottom: 1px solid #e5e7eb;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1100px;
+            width: 90%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 18px 0;
+        }
+
+        .logo {
+            font-size: 1.2rem;
+            font-weight: 700;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 25px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            font-size: 0.95rem;
+            color: #4b5563;
+        }
+
+        .nav-links a:hover {
+            color: #111827;
+        }
+
+        /* Hero */
+
+        .hero {
+            min-height: 85vh;
+            display: flex;
+            align-items: center;
+            background: #eef4f0;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            padding: 80px 0;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 6vw, 4.8rem);
+            line-height: 1.05;
+            margin-bottom: 20px;
+        }
+
+        .hero h2 {
+            font-size: 1.4rem;
+            font-weight: 500;
+            color: #4b5563;
+            margin-bottom: 25px;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            max-width: 700px;
+            color: #374151;
+            margin-bottom: 35px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 13px 22px;
+            border: 1px solid #1f2933;
+            border-radius: 6px;
+            font-weight: 600;
+        }
+
+        .button:hover {
+            background: #1f2933;
+            color: white;
+        }
+
+        /* Sections */
+
+        section {
+            padding: 90px 0;
+        }
+
+        .section-title {
+            font-size: 2.2rem;
+            margin-bottom: 15px;
+        }
+
+        .section-intro {
+            max-width: 750px;
+            color: #6b7280;
+            margin-bottom: 40px;
+        }
+
+        /* Research cards */
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border: 1px solid #e5e7eb;
+            border-radius: 10px;
+        }
+
+        .card h3 {
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            color: #6b7280;
+        }
+
+        .card a {
+            display: inline-block;
+            margin-top: 15px;
+            font-weight: 600;
+        }
+
+        /* About */
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+        }
+
+        .about-text p {
+            margin-bottom: 18px;
+        }
+
+        .interests {
+            list-style: none;
+        }
+
+        .interests li {
+            padding: 10px 0;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        /* Contact */
+
+        .contact {
+            background: #eef4f0;
+        }
+
+        .contact-box {
+            max-width: 700px;
+        }
+
+        .contact-box p {
+            margin-bottom: 15px;
+        }
+
+        /* Footer */
+
+        footer {
+            background: #111827;
+            color: #d1d5db;
+            padding: 35px 0;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+        }
+
+        /* Mobile */
+
+        @media (max-width: 700px) {
+
+            .nav-container {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .nav-links {
+                gap: 12px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero {
+                min-height: auto;
+            }
+
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 35px;
+            }
+
+            section {
+                padding: 65px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+
+    <nav>
+        <div class="nav-container">
+
+            <div class="logo">
+                Dipesh Khatri Chhetri
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#conservation">Conservation</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+        </div>
+    </nav>
+
+
+    <!-- Hero -->
+
+    <header class="hero">
+
+        <div class="container">
+
+            <div class="hero-content">
+
+                <h1>Dipesh Khatri Chhetri</h1>
+
+                <h2>
+                    Bird Researcher · Forestry Student · Conservationist
+                </h2>
+
+                <p>
+                    I am an undergraduate forestry student and bird researcher
+                    from Nepal interested in avian ecology, raptor research,
+                    vulture conservation, habitat use and biodiversity
+                    conservation.
+                </p>
+
+                <div class="buttons">
+
+                    <a class="button" href="#research">
+                        Explore My Research
+                    </a>
+
+                    <a class="button" href="#contact">
+                        Contact Me
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- About -->
+
+    <section id="about">
+
+        <div class="container">
+
+            <h2 class="section-title">
+                About Me
+            </h2>
+
+            <p class="section-intro">
+                My work combines forestry, field-based bird research and
+                conservation to better understand threatened bird species
+                and the ecological factors influencing their populations.
+            </p>
+
+            <div class="about-grid">
+
+                <div class="about-text">
+
+                    <p>
+                        I am currently pursuing a Bachelor's degree in
+                        Forestry at the Institute of Forestry, Pokhara
+                        Campus, Tribhuvan University, Nepal.
+                    </p>
+
+                    <p>
+                        My interest in birds developed through field
+                        birdwatching and conservation activities and has
+                        increasingly developed into an interest in scientific
+                        research, particularly on raptors and vultures.
+                    </p>
+
+                    <p>
+                        I am interested in developing strong skills in field
+                        research, ecological data analysis, GIS and scientific
+                        communication so that I can contribute to evidence-
+                        based bird conservation in Nepal.
+                    </p>
+
+                </div>
+
+                <div>
+
+                    <h3>Research Interests</h3>
+
+                    <ul class="interests">
+
+                        <li>Raptor Ecology</li>
+                        <li>Vulture Ecology & Conservation</li>
+                        <li>Avian Ecology</li>
+                        <li>Habitat Use & Selection</li>
+                        <li>Species Distribution</li>
+                        <li>Threat Assessment</li>
+                        <li>Human–Wildlife Interactions</li>
+                        <li>Biodiversity Conservation</li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Research -->
+
+    <section id="research">
+
+        <div class="container">
+
+            <h2 class="section-title">
+                Research
+            </h2>
+
+            <p class="section-intro">
+                My research interests focus on understanding the ecology,
+                habitat relationships and conservation challenges of birds,
+                particularly threatened raptors.
+            </p>
+
+            <div class="cards">
+
+                <div class="card">
+
+                    <h3>Raptor Ecology</h3>
+
+                    <p>
+                        Investigating the ecology, habitat use, distribution
+                        and conservation challenges of raptors in Nepal.
+                    </p>
+
+                </div>
+
+
+                <div class="card">
+
+                    <h3>Vulture Conservation</h3>
+
+                    <p>
+                        Researching threatened vultures, their habitat
+                        requirements, feeding ecology, threats and
+                        conservation needs.
+                    </p>
+
+                </div>
+
+
+                <div class="card">
+
+                    <h3>Avian Ecology</h3>
+
+                    <p>
+                        Studying bird diversity, habitat associations,
+                        population patterns and environmental drivers.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Projects -->
+
+    <section id="projects">
+
+        <div class="container">
+
+            <h2 class="section-title">
+                Featured Projects
+            </h2>
+
+            <p class="section-intro">
+                Selected research projects and research interests.
+            </p>
+
+            <div class="cards">
+
+                <div class="card">
+
+                    <h3>
+                        Red-headed Vulture
+                    </h3>
+
+                    <p>
+                        Habitat use and environmental drivers of the
+                        Critically Endangered Red-headed Vulture
+                        (<i>Sarcogyps calvus</i>) in Nepal.
+                    </p>
+
+                    <a href="#">
+                        Project details →
+                    </a>
+
+                </div>
+
+
+                <div class="card">
+
+                    <h3>
+                        Steppe Eagle
+                    </h3>
+
+                    <p>
+                        Investigating the wintering ecology, habitat
+                        relationships and threats affecting Steppe Eagles
+                        (<i>Aquila nipalensis</i>) in Pokhara Valley, Nepal.
+                    </p>
+
+                    <a href="#">
+                        Project details →
+                    </a>
+
+                </div>
+
+
+                <div class="card">
+
+                    <h3>
+                        Egyptian Vulture
+                    </h3>
+
+                    <p>
+                        Investigating seasonal variation in age-class
+                        composition of Egyptian Vultures
+                        (<i>Neophron percnopterus</i>) in Pokhara Valley.
+                    </p>
+
+                    <a href="#">
+                        Project details →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Conservation -->
+
+    <section id="conservation">
+
+        <div class="container">
+
+            <h2 class="section-title">
+                Conservation Experience
+            </h2>
+
+            <p class="section-intro">
+                My conservation experience includes bird monitoring,
+                environmental awareness activities, field surveys and
+                volunteer work related to bird conservation in Nepal.
+            </p>
+
+            <div class="cards">
+
+                <div class="card">
+
+                    <h3>
+                        Bird Conservation Nepal
+                    </h3>
+
+                    <p>
+                        Volunteer involvement in birdwatching, communication,
+                        awareness and conservation activities.
+                    </p>
+
+                </div>
+
+
+                <div class="card">
+
+                    <h3>
+                        Field Surveys
+                    </h3>
+
+                    <p>
+                        Participation in bird and raptor surveys and
+                        field-based biodiversity research.
+                    </p>
+
+                </div>
+
+
+                <div class="card">
+
+                    <h3>
+                        Conservation Education
+                    </h3>
+
+                    <p>
+                        Interested in communicating scientific knowledge
+                        and conservation messages to local communities,
+                        students and the wider public.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Contact -->
+
+    <section id="contact" class="contact">
+
+        <div class="container">
+
+            <div class="contact-box">
+
+                <h2 class="section-title">
+                    Contact
+                </h2>
+
+                <p>
+                    I am interested in research collaboration, bird
+                    conservation initiatives, field research opportunities
+                    and academic discussions related to avian ecology.
+                </p>
+
+                <p>
+                    <strong>Email:</strong>
+                    <a href="mailto:chhetridipesh503@gmail.com">
+                        chhetridipesh503@gmail.com
+                    </a>
+                </p>
+
+                <p>
+                    <strong>Location:</strong>
+                    Pokhara, Nepal
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <div class="container">
+
+            <p>
+                © 2026 Dipesh Khatri Chhetri. All rights reserved.
+            </p>
+
+            <p>
+                Bird Research · Forestry · Conservation
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
